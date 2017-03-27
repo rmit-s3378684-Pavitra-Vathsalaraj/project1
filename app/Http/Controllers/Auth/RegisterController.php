@@ -9,6 +9,11 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
+
+
+
+
+//    Laravel default register controller
     /*
     |--------------------------------------------------------------------------
     | Register Controller
