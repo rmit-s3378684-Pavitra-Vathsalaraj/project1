@@ -1,6 +1,6 @@
 @include('layouts.nav')
 
-	<div class="container-fluid">
+	<div style='margin-top:5%' class="container-fluid">
 		<div style='width:50%;margin:auto;' class="panel panel-default">
 		<h2 style='margin-left:5%' >Register</h2>
 		<hr>

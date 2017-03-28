@@ -1,6 +1,6 @@
 @include('layouts.nav')
 
-	<div class="container-fluid">
+	<div style='margin-top:5%' class="container-fluid">
 		<div style='width: 30%;margin:auto' class="panel panel-default">
 			<h2 style='margin-left:5%' >Log in</h2>
 				<hr>
@@ -42,7 +42,10 @@
         	</p>
 			</form>
 		</div>
+
 	</div>
+
+@include('layouts.login_intro')
 
 @include('layouts.footer')
 </body>
