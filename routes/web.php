@@ -11,8 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts/login');
+Route::get('/change_password', function () {
+    return view('layouts/change_password');
+});
+
+Route::get('/edit_profile', function () {
+    return view('layouts/edit_profile');
+});
+
+Route::get('/my_account', function () {
+    return view('layouts/my_account');
 });
 
 Route::get('/register', function () {
