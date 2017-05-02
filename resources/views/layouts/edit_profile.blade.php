@@ -71,7 +71,7 @@
 			</div>
 			<hr>
 			<p style='text-align: right'>
-			<a style='border-color:#ccc' href="#" class="btn btn-secondary">Delete</a>
+			<a style='border-color:#ccc' href="{{URL::to('/edit_profile/delete)}}" class="btn btn-secondary">Delete</a>
 			 	<a style='border-color:#ccc' href="{{URL::to('/my_account')}}" class="btn btn-secondary">Cancel</a>
         	  <button style='margin-left:20px' href="#" class="btn btn-primary">Apply change</button>
         	  	
