@@ -79,11 +79,10 @@ Route::get('/nav', function () {
 //Auth::routes();
 
 
-Route::get('/index','PostController@index');
-//Auth::routes();
 //RegisterController route
 Route::post('/register_action','RegisterController@store');
 Route::get('/userdetail', 'RegisterController@show_userprofile');
+Route::delete('/delete_user',['as'=> 'user.destroy','uses' => 'RegisterController@delete_user']);
 //LoginController route
 Route::post('/login_check','LoginController@postlogin');
 Route::get('/logout','LoginController@user_logout')->middleware("auth");
@@ -99,4 +98,3 @@ Route::get('/filtercontent_cheese','PostController@display_cheese');
 Route::get('/filtercontent_wine','PostController@display_wine');
 Route::get('/filtercontent_grain','PostController@display_grain');
 Route::get('/view_description', 'PostController@show_description');
-Route::delete('/edit_profile/delete', 'RegisterController@destroy');
