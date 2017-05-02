@@ -99,4 +99,4 @@ Route::get('/filtercontent_cheese','PostController@display_cheese');
 Route::get('/filtercontent_wine','PostController@display_wine');
 Route::get('/filtercontent_grain','PostController@display_grain');
 Route::get('/view_description', 'PostController@show_description');
-Route::delete('/edit_profile/delete', 'PostController@destroy');
+Route::delete('/edit_profile/delete', 'RegisterController@destroy');
