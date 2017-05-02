@@ -53,6 +53,17 @@ class RegisterController extends Controller
     	}
     
     }
+	
+	public function destroy()
+	{
+	Auth::user()->delete();
+	return Redirect::to_route(‘profile’)
+		->with(‘message’, ‘profile was deleted!’);
+	}
+
+	
+	
+	
     public function postlogin(){
 
 		//echo "login function";
